@@ -1,41 +1,74 @@
-**[[libraryNameWithSpacesAndUpperCases]](README.md)**
+[[libraryNameWithSpacesAndUpperCases]](README.md)
 
-[Globals](README.md)
+# [libraryNameWithSpacesAndUpperCases]
 
 ## Index
 
-### Type aliases
+### Variables
 
-* [NumberParseable](README.md#numberparseable)
+* [HEX_COLOR](README.md#const-hex_color)
 
 ### Functions
 
-* [isNumberParseable](README.md#const-isnumberparseable)
+* [hexAlpha](README.md#const-hexalpha)
+* [parseToRGB](README.md#const-parsetorgb)
+* [resolveHexShorthand](README.md#const-resolvehexshorthand)
 
-## Type aliases
+## Variables
 
-###  NumberParseable
+### `Const` HEX_COLOR
 
-Ƭ **NumberParseable**: *string | number | false | true & object*
+• **HEX_COLOR**: *RegExp‹›* =  /^#([0-9a-f]{1,2})([0-9a-f]{1,2})([0-9a-f]{1,2})$/i
 
-*Defined in [index.ts:4](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/696db7f/src/index.ts#L4)*
-
-A Branded Type for values parseable to number.
+*Defined in [index.ts:1](https://github.com/iagobelo/parse-hex-to-rgba/blob/3a25836/src/index.ts#L1)*
 
 ## Functions
 
-### `Const` isNumberParseable
+### `Const` hexAlpha
 
-▸ **isNumberParseable**(`value`: unknown): *boolean*
+▸ **hexAlpha**(`hex`: string, `alpha`: number): *string*
 
-*Defined in [index.ts:23](https://github.com/VitorLuizC/typescript-library-boilerplate/blob/696db7f/src/index.ts#L23)*
+*Defined in [index.ts:27](https://github.com/iagobelo/parse-hex-to-rgba/blob/3a25836/src/index.ts#L27)*
 
-Check if value is parseable to number.
+Converts a `HEX` color to a `RGBA` color.
+
+**Parameters:**
+
+Name | Type | Default | Description |
+------ | ------ | ------ | ------ |
+`hex` | string | - | Color in HEX. |
+`alpha` | number | 1 | Alpha range **(float)**.  |
+
+**Returns:** *string*
+
+___
+
+### `Const` parseToRGB
+
+▸ **parseToRGB**(`color`: string): *number[]*
+
+*Defined in [index.ts:6](https://github.com/iagobelo/parse-hex-to-rgba/blob/3a25836/src/index.ts#L6)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`value` | unknown |
+`color` | string |
 
-**Returns:** *boolean*
+**Returns:** *number[]*
+
+___
+
+### `Const` resolveHexShorthand
+
+▸ **resolveHexShorthand**(`color`: string): *string*
+
+*Defined in [index.ts:3](https://github.com/iagobelo/parse-hex-to-rgba/blob/3a25836/src/index.ts#L3)*
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`color` | string |
+
+**Returns:** *string*

@@ -1,6 +1,6 @@
 /*!
- * fluenti v0.0.0
- * (c) [authorFullName]
+ * parse-hex-to-rgba v0.0.0
+ * (c) Iago Belo
  * Released under the MIT License.
  */
 'use strict';
@@ -13,6 +13,15 @@ var parseToRGB = function (color) {
   if (!HEX_COLOR.test(color)) { throw new Error('Cannot parse invalid hex color.'); }
   return HEX_COLOR.exec(color).reduce(function (colors, color, index) { return index === 0 ? colors : colors.concat( [parseInt(resolveHexShorthand(color), 16)]); }, []);
 };
+/**
+ * Converts a `HEX` color to a `RGBA` color.
+ * @param hex - Color in HEX.
+ * @param alpha - Alpha range **(float)**.
+ *
+ * @example
+ * color('#005799', 0.22); // rgba(0, 87, 153, 0.22)
+ */
+
 
 var hexAlpha = function (hex, alpha) {
   if ( alpha === void 0 ) alpha = 1;
@@ -23,12 +32,6 @@ var hexAlpha = function (hex, alpha) {
   var B = ref[2];
   return ("rgba(" + R + ", " + G + ", " + B + ", " + alpha + ")");
 };
-
-console.log(hexAlpha('#fff', 0.22));
-console.log(hexAlpha('#fff020', 0.22));
-console.log(hexAlpha('#CCA902', 0.22));
-console.log(hexAlpha('#F0F', 0.22));
-console.log(hexAlpha('#IDHAS)IJDOSA', 0.22));
 
 module.exports = hexAlpha;
 //# sourceMappingURL=index.js.map
