@@ -1,6 +1,6 @@
 {
   "name": "parse-hex-to-rgba",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Converts a HEX color to a RGBA color.",
   "cdn": "dist/index.umd.js",
   "main": "dist/index.js",
