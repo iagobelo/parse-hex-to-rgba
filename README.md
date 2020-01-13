@@ -28,7 +28,7 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 <script src="https://cdn.jsdelivr.net/npm/parse-hex-to-rgba"></script>
 
 <script>
-  // UMD module is exposed through the "[libraryCammelCaseName]" global variable.
+  // UMD module is exposed through the "[parseHexToRgba]" global variable.
   console.log([parseHexToRgba]);
 </script>
 ```
