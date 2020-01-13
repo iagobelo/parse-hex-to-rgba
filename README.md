@@ -1,4 +1,4 @@
-# [libraryNameWithSpacesAndUpperCases]
+# [Parse Hex To RGBA]
 
 [![Build Status](https://travis-ci.org/iagobelo/parse-hex-to-rgba.svg?branch=master)](https://travis-ci.org/iagobelo/parse-hex-to-rgba)
 [![License](https://badgen.net/github/license/iagobelo/parse-hex-to-rgba)](./LICENSE)
@@ -29,7 +29,7 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 
 <script>
   // UMD module is exposed through the "[libraryCammelCaseName]" global variable.
-  console.log([libraryCammelCaseName]);
+  console.log([parseHexToRgba]);
 </script>
 ```
 
