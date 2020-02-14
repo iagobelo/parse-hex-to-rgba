@@ -5,7 +5,7 @@ const configuration: Configuration = {
   input: 'src/index.ts',
   output: {
     format: ['es', 'cjs', 'umd', 'umd-min'],
-    moduleName: '[parseHexToRgba]',
+    moduleName: 'parseHexToRgba',
     sourceMap: true
   },
   babel: {

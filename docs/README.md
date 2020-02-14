@@ -1,6 +1,6 @@
-[[libraryNameWithSpacesAndUpperCases]](README.md)
+[Parse Hex To RGBA](README.md)
 
-# [libraryNameWithSpacesAndUpperCases]
+# Parse Hex To RGBA
 
 ## Index
 
@@ -20,7 +20,7 @@
 
 • **HEX_COLOR**: *RegExp‹›* =  /^#([0-9a-f]{1,2})([0-9a-f]{1,2})([0-9a-f]{1,2})$/i
 
-*Defined in [index.ts:1](https://github.com/iagobelo/parse-hex-to-rgba/blob/ae69807/src/index.ts#L1)*
+*Defined in [index.ts:1](https://github.com/iagobelo/parse-hex-to-rgba/blob/2f4add4/src/index.ts#L1)*
 
 ## Functions
 
@@ -28,16 +28,16 @@
 
 ▸ **hexAlpha**(`hex`: string, `alpha`: number): *string*
 
-*Defined in [index.ts:27](https://github.com/iagobelo/parse-hex-to-rgba/blob/ae69807/src/index.ts#L27)*
+*Defined in [index.ts:27](https://github.com/iagobelo/parse-hex-to-rgba/blob/2f4add4/src/index.ts#L27)*
 
 Converts a `HEX` color to a `RGBA` color.
 
 **Parameters:**
 
-Name | Type | Default | Description |
------- | ------ | ------ | ------ |
-`hex` | string | - | Color in HEX. |
-`alpha` | number | 1 | Alpha range **(float)**.  |
+| Name    | Type   | Default | Description              |
+| ------- | ------ | ------- | ------------------------ |
+| `hex`   | string | -       | Color in HEX.            |
+| `alpha` | number | 1       | Alpha range **(float)**. |
 
 **Returns:** *string*
 
@@ -47,13 +47,13 @@ ___
 
 ▸ **parseToRGB**(`color`: string): *number[]*
 
-*Defined in [index.ts:6](https://github.com/iagobelo/parse-hex-to-rgba/blob/ae69807/src/index.ts#L6)*
+*Defined in [index.ts:6](https://github.com/iagobelo/parse-hex-to-rgba/blob/2f4add4/src/index.ts#L6)*
 
 **Parameters:**
 
-Name | Type |
------- | ------ |
-`color` | string |
+| | Name       | Type     |
+| | -------- | ------ |
+| | `color` | string |
 
 **Returns:** *number[]*
 
@@ -63,7 +63,7 @@ ___
 
 ▸ **resolveHexShorthand**(`color`: string): *string*
 
-*Defined in [index.ts:3](https://github.com/iagobelo/parse-hex-to-rgba/blob/ae69807/src/index.ts#L3)*
+*Defined in [index.ts:3](https://github.com/iagobelo/parse-hex-to-rgba/blob/2f4add4/src/index.ts#L3)*
 
 **Parameters:**
 

@@ -1,4 +1,4 @@
-# [Parse Hex To RGBA]
+# Parse Hex To RGBA
 
 [![Build Status](https://travis-ci.org/iagobelo/parse-hex-to-rgba.svg?branch=master)](https://travis-ci.org/iagobelo/parse-hex-to-rgba)
 [![License](https://badgen.net/github/license/iagobelo/parse-hex-to-rgba)](./LICENSE)
@@ -28,8 +28,8 @@ This module has an UMD bundle available through JSDelivr and Unpkg CDNs.
 <script src="https://cdn.jsdelivr.net/npm/parse-hex-to-rgba"></script>
 
 <script>
-  // UMD module is exposed through the "[parseHexToRgba]" global variable.
-  console.log([parseHexToRgba]);
+  // UMD module is exposed through the "parseHexToRgba" global variable.
+  console.log(parseHexToRgba);
 </script>
 ```
 

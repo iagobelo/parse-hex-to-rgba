@@ -1,7 +1,7 @@
 {
   "out": "./docs",
   "mode": "file",
-  "name": "[Parse Hex To RGBA]",
+  "name": "Parse Hex To RGBA",
   "theme": "markdown",
   "readme": "none",
   "module": "es2015",
