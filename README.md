@@ -1,10 +1,10 @@
 # Parse Hex To RGBA
 
 [![CI](https://github.com/iagobelo/parse-hex-to-rgba/actions/workflows/ci.yml/badge.svg)](https://github.com/iagobelo/parse-hex-to-rgba/actions/workflows/ci.yml)
-[![npm version](https://badgen.net/npm/v/parse-hex-to-rgba)](https://www.npmjs.com/package/parse-hex-to-rgba)
-[![License](https://badgen.net/github/license/iagobelo/parse-hex-to-rgba)](./LICENSE)
-[![Library minified size](https://badgen.net/bundlephobia/min/parse-hex-to-rgba)](https://bundlephobia.com/result?p=parse-hex-to-rgba)
-[![Library minified + gzipped size](https://badgen.net/bundlephobia/minzip/parse-hex-to-rgba)](https://bundlephobia.com/result?p=parse-hex-to-rgba)
+[![npm version](https://img.shields.io/npm/v/parse-hex-to-rgba)](https://www.npmjs.com/package/parse-hex-to-rgba)
+[![Bundle size](https://img.shields.io/bundlejs/size/parse-hex-to-rgba)](https://bundlejs.com/?q=parse-hex-to-rgba)
+[![Downloads](https://img.shields.io/npm/dm/parse-hex-to-rgba)](https://www.npmjs.com/package/parse-hex-to-rgba)
+[![License](https://img.shields.io/npm/l/parse-hex-to-rgba)](./LICENSE)
 
 Converts a `HEX` color to a `RGBA` color. Zero dependencies, ships ESM, CJS and
 UMD builds with TypeScript types.
