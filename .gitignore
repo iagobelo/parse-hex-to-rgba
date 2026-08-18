@@ -7,14 +7,12 @@
 # Node.js modules.
 node_modules/
 
-# NPM's lockfile & shrinkwrap.
-# We're using Yarn and it provides it's own lockfile.
-package-lock.json
-npm-shrinkwrap.json
+# Build output.
+dist/
 
-# Log's files.
+# Coverage reports.
+coverage/
+
+# Log files.
 *.log
 *.log.*
-
-# Dist files.
-dist/
