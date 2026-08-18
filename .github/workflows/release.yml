@@ -1,0 +1,42 @@
+name: Release
+
+# Publishes to npm using Trusted Publishing (OIDC) — no NPM_TOKEN secret.
+# Requires the package on npmjs.com to trust this repository and workflow:
+# https://docs.npmjs.com/trusted-publishers
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+jobs:
+  publish:
+    name: Publish to npm
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          registry-url: https://registry.npmjs.org
+          cache: npm
+
+      # Trusted Publishing requires npm 11.5.1 or newer.
+      - name: Update npm
+        run: npm install -g npm@latest
+
+      - run: npm ci
+
+      - name: Verify before publishing
+        run: |
+          npm run typecheck
+          npm run lint
+          npm run test:coverage
+
+      - name: Publish
+        run: npm publish --access public
